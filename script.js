@@ -624,6 +624,22 @@ startButton.onclick = () => {
 		format = new PD50();
 	else if(modeSelect.value == "PD90")
 		format = new PD90();
+	else if(modeSelect.value == "M3")
+		format = new MartinMThree();
+	else if(modeSelect.value == "M4")
+		format = new MartinMFour();
+        else if(modeSelect.value == "S3")
+		format = new ScottieThree();
+        else if(modeSelect.value == "S4")
+		format = new ScottieFour();
+        else if(modeSelect.value == "R8")
+		format = new Robot8();
+        else if(modeSelect.value == "R12")
+		format = new Robot12();
+        else if(modeSelect.value == "R24")
+		format = new Robot24();
+        else if(modeSelect.value == "R36")
+		format = new Robot36();
 	else {
 		warningText.textContent = "You must select a mode";
 		startButton.disabled = true;
